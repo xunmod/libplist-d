@@ -665,7 +665,7 @@ void plist_from_bin (const(char)* plist_bin, uint length, plist_t* plist);
  * @param length length of the buffer to read.
  * @param plist a pointer to the imported plist.
  */
-void plist_from_memory (const(char)* plist_data, uint length, plist_t* plist);
+void plist_from_memory (const(char)* plist_data, uint length, plist_t* plist, void* format);
 
 /**
  * Test if in-memory plist data is binary or XML
