@@ -35,7 +35,7 @@ version (Windows) {
 } else version (OSX) {
     enum libplist = LibImport("libplist-2.0.3.dylib", "libplist-2.0.4.dylib");
 } else {
-    enum libplist = LibImport("libplist-2.0.so.3", "libplist.so.3", "libplist-2.0.so.4", "libplist.so.4");
+    enum libplist = LibImport("libplist-2.0.so.3", "libplist.so.3", "libplist-2.0.so.4", "libplist.so.4", "libplist-2.0.so");
 }
 
 mixin makeBindings;
